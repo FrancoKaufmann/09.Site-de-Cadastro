@@ -1,0 +1,541 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Variaveis */
+
+:root {
+    --bg-informacoes: #292A2B;
+    --bg-widgets: #EB6114;
+    --font-color: #FFFFFF;
+    --bg-claro: #4D4D4D;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+}
+/* Cabeçalho */
+
+.cabecalho-imagem img {
+    
+    width: 106px;
+    height: 140px;
+    margin-left: 30px;
+    
+    
+}
+
+header {
+    background-color: var(--bg-widgets);
+    width: 100%;
+    height: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+
+/* Parte de informações */
+
+#informacoes {
+    background-color: var(--bg-informacoes);
+    margin-top: 150px;
+}
+
+.container-informacoes {
+    display: flex;
+    
+}
+
+#informacoes article {
+    flex: 1;
+}
+#article-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway';
+    
+}
+
+article .text-h1 {
+    
+    width: calc(100% - 80px);
+    font-size: 9.6rem;
+    font-weight: 900;
+    
+    background: linear-gradient(to right, #EB6114, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+
+/* Segunda parte das informações */
+#informacoes aside {
+    flex: 1;
+}
+
+aside .img01 {
+    position: relative;
+    width: 100%;
+}
+
+aside .img02 {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    filter: drop-shadow(-41px 29px 68px black);
+    
+}
+
+/* parte de contato do site */
+
+#article-client {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Raleway';
+    margin: 150px 40px 150px 40px;
+}
+
+#article-client .container-client {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-beneficios {
+    flex: 1;
+}
+
+.container-vantagens {
+    flex:1;
+}
+
+.widget-beneficios {
+    
+    width: calc(100% - 80px);
+    color: var(--bg-widgets);
+    font-size: 7.6rem;
+    font-weight: 900;
+}
+
+ .widget-vantagens {
+    
+    width: calc(100% - 80px);
+    color: var(--bg-informacoes);
+    font-weight: 600;
+    font-size: 4.8rem;
+}
+
+#article-client button{
+    margin-top: 100px;
+    background-color: var(--bg-informacoes);
+    padding: 3% 10% 3% 10%;
+    border-radius: 85px;
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--font-color);
+    border: 1px solid transparent;
+}
+
+#article-client button a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+article .widget-chamada {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    font-family: 'Raleway';
+    font-weight: 900;
+    font-size: 12.8rem;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--bg-informacoes);
+    
+}
+
+article .widget-container-contact {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+
+article .text-contact1, .text-contact2 {
+    flex: 1;
+    background-color: var(--bg-widgets);
+    padding: 60px 0px 60px 40px;
+    font-family: 'Raleway';
+    font-weight: 900;
+    color: var(--font-color);
+    font-size: 6.4rem;
+}
+
+article .text-contact1 a, .text-contact2 a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+/* Parte do cadastro */
+
+#aside-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.widget-contact-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 44px;
+    background-color: var(--bg-widgets);
+    width: 75%;
+    height: 50%;
+    border-radius: 67px;
+   
+}
+
+.widget-contact-input {
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+    flex-wrap: wrap;
+    border: 4px solid var(--bg-informacoes);
+    width: 100%;
+    height: 381px;
+    border-radius: 67px;
+}
+
+.widget-contact-input input {
+    width: 355px;
+    height: 45px;
+    border-radius: 15px;
+    border: 1px solid transparent;
+}
+
+.widget-contact-input label {
+    font-family: 'Raleway';
+    color: var(--font-color);
+    font-weight: 500;
+    font-size: 4.0rem;
+}
+
+.input1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+
+.input1 .text1 {
+    margin-bottom: 100px;
+}
+
+
+.input2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input2 .text3 {
+    margin-bottom: 100px;
+}
+
+/* botão do cadastro  */
+
+.widget-contact-bottom {
+    margin-top: 100px;
+}
+
+.widget-contact-bottom input {
+    font-size: 4.8rem;
+    font-weight: 900;
+    color: var(--font-color);
+    background-color: var(--bg-informacoes);
+    border-radius: 21px;
+    border: 1px solid transparent;
+    padding: 20px 60px 20px 60px;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--bg-informacoes);
+    width: 100%;
+    height: 400px;
+}
+
+footer .rodape-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: end;
+    height: 100%;
+
+}
+
+footer .rodape-line {
+    background-color: var(--bg-claro);
+    height: 2px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+footer .rodape-copy {
+    font-family: 'Raleway';
+    font-weight: 400;
+    margin-bottom: 50px;
+    font-size: 2.4rem;
+    color: var(--bg-claro);
+}
+
+/* Animaçoes */
+
+#article-client button:hover {
+    background-color: var(--bg-widgets);
+    scale: 1.1;
+    
+}
+
+#article-client button a:hover {
+    color: #292A2B;
+}
+
+#article-client button i:hover {
+    color: #292A2B;
+}
+
+
+#article-client .button a {
+    padding: 50px;
+}
+
+
+#article-client button {
+    transition-property: background-color, scale;
+    transition-duration: 0.5s, 1s;
+    transition-timing-function: ease-in-out;
+}
+
+article .text-contact2:hover {
+    background-color: var(--bg-informacoes);
+    scale: 1.1;
+}
+
+article .text-contact1:hover {
+    background-color: var(--bg-informacoes);
+    scale: 1.1;
+}
+
+article .text-contact1, .text-contact2 {
+    transition-property: background-color, scale;
+    transition-duration: 0.2s, 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.widget-contact-bottom input:hover {
+    background-color: var(--font-color);
+    scale: 1.1;
+    color: #292A2B;
+}
+
+.widget-contact-bottom input {
+    transition-property: background-color, scale;
+    transition-duration: 0.5s, 1s;
+    transition-timing-function: ease-in-out;
+}
+
+
+/* Adaptabilidade */
+
+@media (max-width:1430px) {
+    article .text-h1 {
+        font-size: 9.5rem;;
+    }
+}
+
+@media (max-width:1413px) {
+    article .text-h1 {
+        font-size: 8.5rem;;
+    }
+}
+
+@media (max-width:1281px) {
+    article .text-h1 {
+        font-size: 7.5rem;;
+    }
+}
+
+@media (max-width:1150px) {
+    article .text-h1 {
+        font-size: 6.5rem;;
+    }
+
+    .widget-contact-input {
+        border: none;
+    }
+
+    .widget-vantagens {
+        padding-left: 50px;
+        font-size: 4.3rem;
+    }
+
+
+}
+
+@media (max-width:1018px) {
+    
+    article .text-h1 {
+        font-size: 5.5rem;;
+    }
+
+    #article-client .container-client {
+        flex-direction: column;
+
+    }
+
+    .widget-vantagens {
+        padding: 50px 0px 0px 0px;
+    }
+
+    article .text-contact1, .text-contact2 {
+        font-size: 5.4rem;
+    }
+
+    .widget-contact-container {
+        height: 100%;
+    }
+
+    .input1 {
+        margin-bottom: 5px;
+    }
+
+    .input1 .text1 {
+        margin-bottom: 10px;
+    }
+
+    .input2 .text3 {
+        margin-bottom: 5px;
+    }
+
+    .widget-contact-input input {
+        width: 100%;
+    }
+
+    .widget-contact-input {
+        flex-direction: column;
+        display: block;
+    }
+
+    html {
+        font-size: 55.5%;
+    }
+    
+}
+
+@media (max-width:910px) {
+    article .text-h1 {
+        font-size: 4.5rem;;
+    }
+}
+
+@media (max-width:620px) {
+
+    html {
+        font-size: 45.5%;
+    }
+
+    .cabecalho-imagem img {
+        width: auto;
+        height: 80px;
+    }
+
+    .container-informacoes {
+        width: 100%;
+    }
+
+    #informacoes aside {
+        display: none;
+    }
+
+    #informacoes {
+        padding: 10% 0% 10% 2%;
+    }
+
+    #article-client {
+
+        margin: 50px 40px 150px 40px;
+
+    }
+
+    article .widget-container-contact{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:500px){
+
+    html {
+        font-size: 35.5%;
+    }
+
+    article .widget-chamada {
+        font-size: 10rem;
+    }
+
+    #article-client button {
+        margin-top: 50px;
+    }
+
+    #article-client {
+        margin-bottom: 50px;
+
+    }
+
+    article .widget-chamada {
+        margin-top: 0px;
+    }
+
+    #aside-contact {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .input1 {
+        margin-bottom: 40px;
+    } 
+
+    footer .rodape-copy {
+        font-size: 2rem;
+    }
+
+    #article-client .button a {
+        padding: 10px;
+    }
+}
+
+    
+
+
+
+
+
+
+
