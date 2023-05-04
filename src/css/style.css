@@ -488,6 +488,60 @@ article .text-contact1, .text-contact2 {
     article .widget-container-contact{
         flex-direction: column;
     }
+
+    #article-client button:active {
+        background-color: var(--bg-widgets);
+        scale: 1.1;
+        
+    }
+    
+    #article-client button a:active {
+        color: #292A2B;
+    }
+    
+    #article-client button i:active {
+        color: #292A2B;
+    }
+    
+    
+    #article-client .button a {
+        padding: 50px;
+    }
+    
+    
+    #article-client button {
+        transition-property: background-color, scale;
+        transition-duration: 0.5s, 1s;
+        transition-timing-function: ease-in-out;
+    }
+    
+    article .text-contact2:active {
+        background-color: var(--bg-informacoes);
+        scale: 1.1;
+    }
+    
+    article .text-contact1:active {
+        background-color: var(--bg-informacoes);
+        scale: 1.1;
+    }
+    
+    article .text-contact1, .text-contact2 {
+        transition-property: background-color, scale;
+        transition-duration: 0.2s, 0.5s;
+        transition-timing-function: ease-in-out;
+    }
+    
+    .widget-contact-bottom input:active {
+        background-color: var(--font-color);
+        scale: 1.1;
+        color: #292A2B;
+    }
+    
+    .widget-contact-bottom input {
+        transition-property: background-color, scale;
+        transition-duration: 0.5s, 1s;
+        transition-timing-function: ease-in-out;
+    }
 }
 
 @media (max-width:500px){
