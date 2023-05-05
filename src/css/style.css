@@ -458,6 +458,10 @@ article .text-contact1, .text-contact2 {
 
 @media (max-width:620px) {
 
+     header {
+        height: 100px;
+    }
+
     html {
         font-size: 45.5%;
     }
@@ -471,12 +475,17 @@ article .text-contact1, .text-contact2 {
         width: 100%;
     }
 
+    article .text-h1 {
+        font-size: 8rem;
+    }
+
     #informacoes aside {
         display: none;
     }
 
     #informacoes {
-        padding: 10% 0% 10% 2%;
+        padding: 15% 0% 15% 2%;
+        margin-top: 100px;
     }
 
     #article-client {
