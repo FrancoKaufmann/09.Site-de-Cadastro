@@ -539,6 +539,10 @@ article .text-contact1, .text-contact2 {
     #article-client .button a {
         padding: 10px;
     }
+
+    article .text-contact2 {
+        background-color: var(--bg-informacoes);
+    }
 }
 
     
